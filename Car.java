@@ -72,7 +72,7 @@ public class Car implements Serializable {
     ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream);
 
     Car toyotaCopy = (Car) objectInputStream.readObject();
-    Car hondaCopy = (Car) objectInputStream.readObject();
+    //Car hondaCopy = (Car) objectInputStream.readObject();
 
     boolean isSameObject = toyotaCopy == toyota;
     System.out.println("Toyota (Copy) - "+toyotaCopy);
